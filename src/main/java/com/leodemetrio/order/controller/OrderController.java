@@ -1,9 +1,10 @@
-package br.com.alurafood.pedidos.controller;
+package com.leodemetrio.order.controller;
 
-import br.com.alurafood.pedidos.dto.OrderDto;
-import br.com.alurafood.pedidos.dto.StatusDto;
-import br.com.alurafood.pedidos.service.OrderService;
+import com.leodemetrio.order.dto.OrderDto;
+import com.leodemetrio.order.dto.StatusDto;
+import com.leodemetrio.order.service.OrderService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
@@ -21,7 +22,12 @@ public class OrderController {
 
         private final OrderService service;
 
-        @GetMapping()
+        @GetMapping("/reference-port")
+        public String referencePort(@Value("${local.server.port}") String portMS){
+            return String.format("MS Order running port %s", portMS);
+        }
+
+        @GetMapping
         public List<OrderDto> findAll() {
             return service.findAll();
         }

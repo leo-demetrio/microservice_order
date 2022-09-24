@@ -1,10 +1,10 @@
-package br.com.alurafood.pedidos.service;
+package com.leodemetrio.order.service;
 
-import br.com.alurafood.pedidos.dto.OrderDto;
-import br.com.alurafood.pedidos.dto.StatusDto;
-import br.com.alurafood.pedidos.model.Order;
-import br.com.alurafood.pedidos.model.Status;
-import br.com.alurafood.pedidos.repository.OrderRepository;
+import com.leodemetrio.order.dto.OrderDto;
+import com.leodemetrio.order.dto.StatusDto;
+import com.leodemetrio.order.model.Order;
+import com.leodemetrio.order.model.Status;
+import com.leodemetrio.order.repository.OrderRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;

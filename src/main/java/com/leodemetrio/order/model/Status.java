@@ -1,4 +1,4 @@
-package br.com.alurafood.pedidos.model;
+package com.leodemetrio.order.model;
 
 public enum Status {
     MADE,

@@ -1,4 +1,4 @@
-package br.com.alurafood.pedidos.model;
+package com.leodemetrio.order.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "pedidos")
+@Table(name = "orders")
 @Getter
 @Setter
 @NoArgsConstructor

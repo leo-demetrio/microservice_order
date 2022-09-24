@@ -11,7 +11,7 @@
 	<groupId>com.leo-demetrio</groupId>
 	<artifactId>orders</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>payments</name>
+	<name>orders</name>
 	<description>MS de Order do LDFood</description>
 	<properties>
 		<java.version>17</java.version>
@@ -69,6 +69,7 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 			<version>3.1.4</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>
