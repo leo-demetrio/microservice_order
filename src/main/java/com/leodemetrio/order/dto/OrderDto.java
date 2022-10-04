@@ -18,6 +18,4 @@ public class OrderDto {
     private Status status;
     private List<ItemOfOrderDto> items = new ArrayList<>();
 
-
-
 }
